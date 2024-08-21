@@ -83,37 +83,33 @@
 
 
                         <form novalidate action="#" method="POST">
-
-
                             <div class="form-label-group mb-3">
-                                <input required placeholder="Name" id="contact_name" name="contact_name" type="text"
-                                    class="form-control">
+                                <input placeholder="Name" id="contact_name" name="contact_name" type="text"
+                                    class="form-control" required minlength="5">
                                 <label for="contact_name">Name</label>
                             </div>
 
                             <div class="form-label-group mb-3">
-                                <input required placeholder="Email" id="contact_email" name="contact_email" type="email"
-                                    class="form-control">
+                                <input id="contact_email" name="contact_email" type="email"
+                                    class="form-control" required placeholder="Email">
                                 <label for="contact_email">Email</label>
                             </div>
 
                             <div class="form-label-group mb-3">
-                                <input required placeholder="Phone" id="contact_phone" name="contact_phone" type="text"
-                                    class="form-control">
+                                <input placeholder="Phone" id="contact_phone" name="contact_phone" type="number"
+                                    class="form-control" required>
                                 <label for="contact_phone">Phone</label>
                             </div>
 
                             <div class="form-label-group mb-4">
-                                <textarea required placeholder="Message" id="contact_message" name="contact_message"
-                                    class="form-control" rows="3"></textarea>
+                                <textarea placeholder="Message" id="contact_message" name="contact_message"
+                                    class="form-control" rows="3" required minlength="5"></textarea>
                                 <label for="contact_message">Message</label>
                             </div>
-
 
                             <button type="submit" class="btn btn-primary btn-block">
                                 Send Message
                             </button>
-
                         </form>
 
 
